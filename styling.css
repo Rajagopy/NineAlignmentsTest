@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap");
+
+body {
+  font-family: "Amiri", serif;
+  margin: 0px;
+}
+
+.header {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+
+  backdrop-filter: blur(1.5px);
+}
+.bgimg {
+  background-image: url(dice-pattern.jpg);
+}
+
+.SubItems {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.Heading {
+  padding-top: 5rem;
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.navigation-bar {
+  padding-top: 1rem;
+}
+
+.navigation-item {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  display: inline;
+}
+
+.content {
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: auto;
+  max-width: 50%;
+}
+
+.quizHead {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.questionsBlock {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #f0e9e9;
+}
+
+.questionBlock {
+  margin: 1rem;
+  padding: 0.5rem;
+  /* background-color: lightblue; */
+}
+
+.questionSingle {
+  padding: 0.5rem;
+  /* background-color: pink; */
+}
+
+.options {
+  padding: 1rem;
+  /* background-color: palegreen; */
+}
+
+.question {
+  padding: 0.5rem;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.submitButton {
+  text-align: center;
+  padding: 1rem;
+}
+
+.submitButtonInside {
+  font-family: "Amiri", serif;
+  /* background-color: palegreen; */
+  font-weight: bold;
+  font-size: large;
+  padding: 0.5rem;
+}
+
+.submitText {
+  text-decoration: none;
+  color: black;
+}
+.option {
+  font-size: medium;
+  /* font-weight: bold; */
+}
+
+.oneOption {
+  padding: 1rem;
+}
+
+#resultText{
+  font-weight:bold;
+  font-size: large;
+}
