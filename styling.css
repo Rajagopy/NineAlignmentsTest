@@ -125,9 +125,17 @@ body {
   font-weight: bold;
 }
 
-.submitButton {
+.submitButton, #takeQuizButton {
   text-align: center;
   padding: 1rem;
+}
+
+.takeQuizButtonInside {
+  font-family: "Amiri", serif;
+  background-color: #EDE9FE;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .submitButtonInside {
