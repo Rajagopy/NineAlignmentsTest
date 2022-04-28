@@ -163,3 +163,9 @@ body {
   font-weight:bold;
   font-size: large;
 }
+
+.errorText{
+  font-size: larger;
+  color: red;
+  font-weight: bold;
+}

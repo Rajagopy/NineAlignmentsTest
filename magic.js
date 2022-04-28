@@ -11,9 +11,10 @@ function Clicker() {
     var questiontype = allQuestions[i - 1].getAttribute("id");
     var nam = "question" + i.toString();
     var x = document.getElementsByName(nam);
-
+    var questionCount = 0;
     for (var j = 0; j < x.length; j++) {
       if (x[j].checked) {
+        questionCount +=1;
         if (questiontype == "lawcha") {
           lawcharesult =
             lawcharesult + Number.parseInt(x[j].getAttribute("value"));
@@ -31,8 +32,10 @@ function Clicker() {
     "&" +
     gooeviresult +
     '"/>';
-
-  document.getElementById("finalResult").submit();
+  if (questionCount == 20){
+  document.getElementById("finalResult").submit();}else{
+    document.getElementById("errorMessage").innerHTML='<p class="errorText"> You have not answered all the questions</p>'
+  }
 }
 
 submitButton.addEventListener("click", Clicker);
