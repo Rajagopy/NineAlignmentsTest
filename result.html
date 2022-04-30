@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Result</title>
-    <link href="styling.css" rel="stylesheet"/>
-</head>
-<body>
+    <link href="styling.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="bgimg">
-        <div class="header">
-            <div class="Heading"><p>Nine Alignments Test</p></div>
-        </div>
-        </div>
+      <div class="header">
+        <div class="Heading"><p>Nine Alignments Test</p></div>
+      </div>
+    </div>
     <div>
-        <h1>Your result is here...</h1>
-        <span id="finalResult">
-            
-        </span>
-        
+      <h1 id="resultHeadText">Your result is...</h1>
     </div>
 
-
+    <div class="resultTable">
+      <table>
+        <tr>
+          <td id="LawfulGood"><span>Lawful Good</span></td>
+          <td id="LawfulNeutral"><span>Lawful Neutral</span></td>
+          <td id="LawfulEvil"><span>Lawful Evil</span></td>
+        </tr>
+        <tr>
+          <td id="NeutralGood"><span>Neutral Good</span></td>
+          <td id="NeutralNeutral"><span>Neutral Neutral</span></td>
+          <td id="NeutralEvil"><span>Neutral Evil</span></td>
+        </tr>
+        <tr>
+          <td id="ChaoticGood"><span>Chaotic Good</span></td>
+          <td id="ChaoticNeutral"><span>Chaotic Neutral</span></td>
+          <td id="ChaoticEvil"><span>Chaotic Evil</span></td>
+        </tr>
+      </table>
+    </div>
+    <div id="revealResultButton">
+      <button type="submit" class="revealButtonInside" onclick="reveal()"> Reveal Result</button>
+    </div>
 
     <script src="magic2.js" type="text/javascript"></script>
-</body>
+  </body>
 </html>

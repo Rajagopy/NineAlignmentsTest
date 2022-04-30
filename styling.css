@@ -125,12 +125,12 @@ body {
   font-weight: bold;
 }
 
-.submitButton, #takeQuizButton {
+.submitButton, #takeQuizButton, #revealResultButton{
   text-align: center;
   padding: 1rem;
 }
 
-.takeQuizButtonInside {
+.takeQuizButtonInside, .revealButtonInside {
   font-family: "Amiri", serif;
   background-color: #EDE9FE;
   font-weight: bold;
@@ -168,4 +168,48 @@ body {
   font-size: larger;
   color: red;
   font-weight: bold;
+}
+
+table,tr,td{
+  border: 5px solid black;
+  border-collapse: collapse;
+}
+
+.resultTable{
+  max-width: 450px;
+  display: block;
+  margin: auto;
+
+}
+
+table{
+  width: 3rem;
+  height: 3rem;
+  aspect-ratio: 1/1;
+  padding: 0%;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+
+
+
+td{
+  padding:2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  width: 5rem;
+  height: 5rem;
+  aspect-ratio: 1/1;
+  /* background-color: white; */
+  /* background-color: aquamarine; */
+}
+
+.insideTable{
+  background-color: palegreen;
+}
+
+#resultHeadText{
+font-size: 3.5rem;
 }
