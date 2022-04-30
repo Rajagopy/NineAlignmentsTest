@@ -6,15 +6,16 @@ let gooeviresult = 0;
 
 function Clicker() {
   var allQuestions = document.getElementsByClassName("questionBlock");
-
+  var questionCount = 0;
   for (var i = 1; i < allQuestions.length + 1; i++) {
     var questiontype = allQuestions[i - 1].getAttribute("id");
     var nam = "question" + i.toString();
     var x = document.getElementsByName(nam);
-    var questionCount = 0;
+    
     for (var j = 0; j < x.length; j++) {
       if (x[j].checked) {
         questionCount +=1;
+        console.log(nam+" : "+questionCount)
         if (questiontype == "lawcha") {
           lawcharesult =
             lawcharesult + Number.parseInt(x[j].getAttribute("value"));
